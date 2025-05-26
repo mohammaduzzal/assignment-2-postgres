@@ -101,6 +101,35 @@ How can you modify data using UPDATE statements?
 ### ✅ Answer:
 UPDATE স্টেটমেন্ট ব্যবহার করে আপনি টেবিলের বিদ্যমান রেকর্ড আপডেট করতে পারেন।
  বেসিক UPDATE সিনট্যাক্স
-```UPDATE table_name
+<pre>```
+UPDATE table_name
 SET column1 = value1, column2 = value2, ...
-WHERE condition;```
+WHERE condition;
+```</pre>
+
+### ❓ Question 7:
+What is the significance of the JOIN operation, and how does it work in PostgreSQL?
+### ✅ Answer:
+ডাটাবেসে JOIN হলো সবচেয়ে শক্তিশালী ফিচারগুলির মধ্যে একটি যা একাধিক টেবিলের ডাটাকে রিলেশনাল উপায়ে সংযুক্ত করে।
+JOIN-এর গুরুত্ব (Significance)
++ রিলেশনাল ডাটা একত্রিত করে - সম্পর্কযুক্ত ডাটা আলাদা টেবিলে থাকলেও JOIN দিয়ে একসাথে দেখানো যায়
+
++ ডাটা রিডানডেন্সি কমায় - একই ডাটা বারবার স্টোর করতে হয় না
+
++ কোয়েরি দক্ষতা বাড়ায় - একাধিক টেবিল থেকে একসাথে ডাটা ফেচ করা যায়
+
+ + জটিল রিপোর্টিং সম্ভব করে - মাল্টি-টেবিল ডাটা অ্যানালাইসিসের জন্য অপরিহার্য
+
+
+PostgreSQL-এ JOIN-এর প্রকারভেদ
+প্রধান ৫ ধরনের JOIN আছে:
+1. INNER JOIN (ডিফল্ট JOIN)
+   কাজ: শুধুমাত্র ম্যাচিং রো রিটার্ন করে
+2. LEFT JOIN (বা LEFT OUTER JOIN)
+   কাজ: বাম টেবিলের সব রো + ডান টেবিলের ম্যাচিং রো
+3. RIGHT JOIN (বা RIGHT OUTER JOIN)
+   কাজ: ডান টেবিলের সব রো + বাম টেবিলের ম্যাচিং রো
+ 4. FULL JOIN (বা FULL OUTER JOIN)
+   কাজ: উভয় টেবিলের সব রো (ম্যাচিং বা না ম্যাচিং)
+5. CROSS JOIN
+   কাজ: সব সম্ভাব্য কম্বিনেশন রিটার্ন করে (কার্টেসিয়ান প্রোডাক্ট)   
