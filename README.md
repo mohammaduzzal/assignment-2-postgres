@@ -95,3 +95,12 @@ PostgreSQL-এ LIMIT এবং OFFSET ক্লজ দুটি ডাটা প
 + নির্দিষ্ট সংখ্যক রো এড়িয়ে যেতে সাহায্য করে
 
  + সাধারণত LIMIT-এর সাথে ব্যবহার করা হয়
+
+### ❓ Question 6:
+How can you modify data using UPDATE statements?
+### ✅ Answer:
+UPDATE স্টেটমেন্ট ব্যবহার করে আপনি টেবিলের বিদ্যমান রেকর্ড আপডেট করতে পারেন।
+ বেসিক UPDATE সিনট্যাক্স
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
