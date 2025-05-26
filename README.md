@@ -101,6 +101,6 @@ How can you modify data using UPDATE statements?
 ### ✅ Answer:
 UPDATE স্টেটমেন্ট ব্যবহার করে আপনি টেবিলের বিদ্যমান রেকর্ড আপডেট করতে পারেন।
  বেসিক UPDATE সিনট্যাক্স
-UPDATE table_name
+```UPDATE table_name
 SET column1 = value1, column2 = value2, ...
-WHERE condition;
+WHERE condition;```
