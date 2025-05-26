@@ -145,10 +145,11 @@ GROUP BY-এর মূল উদ্দেশ্য
 + ডাটা সামারাইজেশন এবং রিপোর্টিং তৈরি করা
   
   বেসিক সিনট্যাক্স
-  <pre>```
-  SELECT column1, aggregate_function(column2)
+  
+<pre>```SELECT column1, aggregate_function(column2)
 FROM table_name
 GROUP BY column1;```</pre>
+             
 
 GROUP BY-এর অভ্যন্তরীণ কাজ
 + GROUP BY ডাটাকে লজিক্যাল গ্রুপে ভাগ করে
